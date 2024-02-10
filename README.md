@@ -1,2 +1,2 @@
-# Effie-s-Valentine
-FOr my long distance best friendddd
+# Effie's-Valentine
+For my long distance best friendddd
