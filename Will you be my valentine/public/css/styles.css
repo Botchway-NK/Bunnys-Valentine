@@ -1,0 +1,106 @@
+body {
+    background-color: #ffe6f2; /* Light pink background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Changed font */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-direction: row;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+#no-button, #yes-button {
+    margin: 0 10px;
+    color: white;
+    cursor: pointer;
+    height: 40px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    padding: 0 15px;
+}
+
+#no-button:hover, #yes-button:hover {
+    border-color: #333;
+}
+
+#no-button {
+    background-color: grey; /* Pink background for No button */
+}
+
+#yes-button {
+    background-color: #ff4d94; /* Darker pink background for Yes button */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.message {
+    display: none;
+    color: #ff1a75; /* Valentine-themed font color */
+}
+
+.banner-gif {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border: 5px solid #ff1a75; /* Pink border for the banner */
+}
+
+.banner-gif img {
+    width: auto;
+    height: 250px;
+    border-radius: 10px; /* Rounded corners for the images */
+}
+
+h1 {
+    color: #ff1a75; /* Valentine-themed font color */
+}
+
+h2 {
+    color: #ff6666; /* Light red font color */
+}
+
+h3 {
+    color: #ff6666; /* Light red font color */
+    font-family: 'Courier New', Courier, monospace; /* Valentine-themed font */
+    font-size: 24px; /* Font size */
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5); /* Text shadow */
+}
+
+h1::before {
+    content: '\2764'; /* Heart emoji */
+    margin-right: 5px; /* Adjust spacing */
+}
+
+h1::after {
+    content: '\2764'; /* Heart emoji */
+    margin-right: 5px; /* Adjust spacing */
+}
+
+h3::after {
+    content: '\2764'; /* Heart emoji */
+    margin-right: 5px; /* Adjust spacing */
+}
+
+/* Make responsive for mobile */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+}
